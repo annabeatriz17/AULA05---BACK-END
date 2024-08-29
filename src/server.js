@@ -17,7 +17,7 @@ const guloseimas = [
     {
         id:2,
         nome:"Sorvete",
-        preco:0.5
+        preco:10.5
     },
     {
         id:3,
@@ -65,7 +65,7 @@ const novoDoce = {
 
 guloseimas.push(novoDoce);
 
-    return res.status(200).send(guloseimas);
+    return res.status(201).send(guloseimas);
 });
 
 app.get("/filmes",(req, res) => {
