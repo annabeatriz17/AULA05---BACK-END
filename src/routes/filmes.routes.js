@@ -88,7 +88,7 @@ return res.status(200).send({
 });
 
 //Rota para deletar um filme marcante
-filmeRoutes.delete("/:id",(req, res) => {
+filmesRoutes.delete("/:id",(req, res) => {
   const { id } =  req.params;
 
   const filme = filmesMarcantes.find((movie) => movie.id === Number(id));
