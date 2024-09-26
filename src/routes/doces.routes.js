@@ -40,10 +40,10 @@ docesRoutes.post("/",(req, res) => {
     return res.status(201).send(guloseimas);
     });
 
-    //Rota para buscar um elemento específico do array guloseimas
-    docesRoutes.get("/:id", (req,res) => {
-        const { id } = req.params
-        const guloseima = guloseimas.find((doce) => doce.id === Number(id)
+//Rota para buscar um elemento específico do array guloseimas
+docesRoutes.get("/:id", (req,res) => {
+    const { id } = req.params
+    const guloseima = guloseimas.find((doce) => doce.id === Number(id)
 );
 
 //console.log(guloseima);
